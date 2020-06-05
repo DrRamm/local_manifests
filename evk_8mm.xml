@@ -18,6 +18,10 @@
            review="" />
 
     <project path="vendor/nxp/imx-firmware" name="imx-firmware" remote="imx-proprietary" revision="f6d0859f9435796f03ae93b70b5f92f4406bc56d" />
+    <project path="system/tools/bpt" name="platform/system/tools/bpt" groups="pdk" remote="android-imx" revision="refs/tags/p9.0.0_2.3.4" />
+
+    <remove-project path="external/avb" name="platform/external/avb" />
+    <project path="external/avb" name="platform/external/avb" groups="pdk" remote="android-imx" revision="refs/tags/p9.0.0_2.3.4" />
 
     <!-- For imx public git. -->
     <project path="vendor/nxp-opensource/uboot-imx" name="uboot-imx" remote="imx-linux-sdk" revision="refs/tags/p9.0.0_2.3.4" />
