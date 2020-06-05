@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="android-imx"
+           fetch="https://source.codeaurora.org/external/imx/aosp/"
+           review="" />
+
+  <remote  name="android-imx-orig"
+           fetch="https://source.codeaurora.org/external/imx/android-imx"
+           review="" />
+
+  <remote  name="imx-linux-sdk"
+           fetch="https://source.codeaurora.org/external/imx/"
+           review="" />
+
+  <remote  name="imx-proprietary"
+           fetch="https://github.com/nxp/"
+           review="" />
+
+    <project path="vendor/nxp/imx-firmware" name="imx-firmware" remote="imx-proprietary" revision="f6d0859f9435796f03ae93b70b5f92f4406bc56d" />
+
+    <!-- For imx public git. -->
+    <project path="vendor/nxp-opensource/uboot-imx" name="uboot-imx" remote="imx-linux-sdk" revision="refs/tags/p9.0.0_2.3.4" />
+    <project path="vendor/nxp-opensource/arm-trusted-firmware" name="imx-atf" remote="imx-linux-sdk" revision="refs/tags/p9.0.0_2.3.4" />
+    <project path="vendor/nxp-opensource/imx-lib" name="imx-lib" remote="imx-linux-sdk" revision="refs/tags/p9.0.0_2.3.4" />
+    <project path="vendor/nxp-opensource/imx-mkimage" name="imx-mkimage" remote="imx-linux-sdk" revision="refs/tags/p9.0.0_2.3.4" />
+    <project path="vendor/nxp-opensource/libdrm-imx" name="libdrm-imx" remote="imx-linux-sdk" revision="refs/tags/p9.0.0_2.3.4" />
+
+    <project path="vendor/nxp-opensource/imx" name="platform/hardware/imx" remote="android-imx-orig" revision="refs/tags/p9.0.0_2.3.4" />
+    <project path="vendor/nxp-opensource/fsl_imx_demo" name="platform/packages/apps/fsl_imx_demo" remote="android-imx-orig" revision="refs/tags/p9.0.0_2.3.4" />
+
+    <project path="device/fsl" name="DrRamm/device_fsl.git" revision="lineage-16.0" remote="private" />
+    <project path="vendor/nxp" name="DrRamm/vendor_nxp.git" revision="lineage-16.0" remote="private" />
+    <project path="vendor/nxp-opensource/kernel_imx" name="DrRamm/kernel_imx.git" revision="lineage-16.0" remote="private" />
+</manifest>
